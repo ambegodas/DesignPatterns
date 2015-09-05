@@ -7,8 +7,11 @@ package com.sample.observerpattern;
 public class WeatherSationDemo {
 	
 	public static void main(String[] args){
-		WetherData wetherdata = new WetherData();
 		
+		//Subject is created
+		WetherData wetherdata = new WetherData();		
+		
+	    // Registering with the subject
 		CurrentConditionsDisplay ccd = new CurrentConditionsDisplay(wetherdata);
 		
 		wetherdata.setMessuerments(10, 20, 30);
